@@ -1,0 +1,115 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    /*font-weight: 200;*/
+    font-size: 100%;
+    /*margin: 0px 0;*/
+    padding: 0;
+    background-color: yellow;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+}
+
+#outer {
+    width: 100%;
+    /*margin: 0;*/
+}
+
+.player {
+    cursor: pointer;
+    /*padding: 0px;*/
+}
+
+.player .name {
+    padding-left: 5%;
+    display: inline-block;
+    width: 40%;
+    font-size: 300%;
+}
+
+.player .score {
+    display: inline-block;
+    width: 33%;
+    text-align: right;
+    font-size: 300%;
+    font-weight: bold;
+    color: #000;
+}
+
+.player .increase, .player .decrease {
+    display: inline-block;
+    margin-left: 2%;
+    width: 8%;
+    text-align: center;
+    font-size: 500%;
+    font-weight: bold;
+    color: #000;    
+}
+
+.player.selected {
+    background-color: yellow;
+}
+
+.player.selected .score {
+    color: black;
+}
+
+.new_leaderboarder {
+    font-weight: bold;
+    font-size: 100%;
+    border-style: dashed none none none;
+    border-color: #000;
+    /*border-width: 50%;*/
+    /*margin: 0px 5px;*/
+    padding: 5% 5%;
+}
+
+
+
+.none {
+    color: #777;
+}
+
+.increase {
+}
+
+.decrease {
+
+}
+
+.increase_btn {
+  cursor: pointer;
+}
+
+.decrease_btn {
+  cursor: pointer;
+}
+
+.new_player_text_input {
+
+}
+
+input[type="text"]
+{
+    font-size:200%;
+    background-color: yellow;
+}
+
+
+.add_new_player
+{
+    /*width: 200px;*/
+    font-size: 200%;
+    background-color: yellow;
+}
+
+input.error {
+    color: red;
+}

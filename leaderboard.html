@@ -1,0 +1,47 @@
+<head>
+  <title>Leaderboarder</title>
+
+  <meta name = "viewport" content = "user-scalable = no">
+
+</head>
+
+<body>
+  <div id="outer">
+    {{> leaderboard}}
+  </div>
+</body>
+
+<template name="leaderboard">
+  <div class="leaderboard">
+    {{#each players}}
+    {{> player}} 
+    {{/each}}
+  </div>
+
+
+  {{> new_leaderboarder}}
+</template>
+
+
+<template name="player">
+  <div class="player {{selected}}">
+    <span class="name">{{name}}</span>
+    <span class="score">{{score}}</span>
+    <span class="increase">+</span>
+    <span class="decrease">-</span>
+  </div>
+</template>
+
+<template name="new_leaderboarder">
+  <div class="new_leaderboarder">
+    {{#if error}}
+    <span id="error">
+      {{error}}
+    </span>
+    <br />
+    {{/if}}
+    <input type="text" class="new_player_text_input" value="" maxlength="12" width="100000" id="input_new_player" />
+    <input type="button" class="add_new_player" value="Start" name="add_new_player" />
+  </div>
+</template>
+
